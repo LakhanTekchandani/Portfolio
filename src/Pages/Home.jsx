@@ -4,6 +4,8 @@ import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import projects from "../Data/projectsData";
+import ProjectCard from "../Components/ProjectCard";
 
 const Home = () => {
   const roles = [
@@ -107,6 +109,22 @@ const Home = () => {
             <img className='image1' src={Photo} alt="" />
           </motion.div>
         </motion.div>
+      </motion.div>
+      <motion.div className='section2' initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 0.8 }}>
+        <h1 className='heading2'>Some Featured Work</h1>
+        <p className='text2'>Things <span>I've Built</span></p>
+        <p className='description2'>A collection of project where I solve real problems <br /> with clean code and thoughtful design. </p>
+       <div className="projects-grid">
+  {projects.slice(0, 4).map((project) => (
+    <ProjectCard
+      key={project.id}
+      project={project}
+    />
+  ))}
+</div>
       </motion.div>
     </div>
   )

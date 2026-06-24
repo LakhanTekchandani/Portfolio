@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 
+
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +14,11 @@ const Navbar = () => {
         <p className='name'>Lakhan</p>
 
         <div
-          className="menu-icon"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "✕" : "☰"}
-        </div>
-
+  className="menu-icon"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? "✕" : "☰"}
+</div>
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
@@ -28,8 +28,6 @@ const Navbar = () => {
         </nav>
 
       </div>
-
-      {menuOpen && <div className="overlay"></div>}
     </>
   )
 }
