@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import projects from "../Data/projectsData";
 import ProjectCard from "../Components/ProjectCard";
+import Footer from '../Components/Footer';
 
 const Home = () => {
   const roles = [
@@ -44,6 +45,7 @@ const Home = () => {
     setPosition({ rotateX, rotateY });
   };
   return (
+    <>
     <div>
       <motion.div initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeInOut" }} className='section1'>
         <Navbar />
@@ -112,21 +114,26 @@ const Home = () => {
       </motion.div>
       <motion.div className='section2' initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8 }}>
         <h1 className='heading2'>Some Featured Work</h1>
-        <p className='text2'>Things <span>I've Built</span></p>
+        <p className='text2'>Things <i>I've Built</i></p>
         <p className='description2'>A collection of project where I solve real problems <br /> with clean code and thoughtful design. </p>
-       <div className="projects-grid">
-  {projects.slice(0, 4).map((project) => (
-    <ProjectCard
-      key={project.id}
-      project={project}
-    />
-  ))}
-</div>
+        <div className="projects-grid">
+          {projects.slice(0, 4).map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+            />
+          ))}
+        </div>
+        <div className='projects'>
+          <Link to="/projects" className='button3'>View All Projects →</Link>
+        </div>
       </motion.div>
-    </div>
+      <Footer/>
+    </div></>
+    
   )
 }
 
