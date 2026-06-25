@@ -16,6 +16,7 @@ const Home = () => {
     "Scalable Backends"
   ]
   const [currentRole, setCurrentRole] = useState(0);
+  const index = 0;
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prev) => (prev + 1) % roles.length);
@@ -112,25 +113,53 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-      <motion.div className='section2' initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8 }}>
-        <h1 className='heading2'>Some Featured Work</h1>
-        <p className='text2'>Things <i>I've Built</i></p>
-        <p className='description2'>A collection of project where I solve real problems <br /> with clean code and thoughtful design. </p>
-        <div className="projects-grid">
+      <div className='section2'>
+        <motion.h1 className='heading2'initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: index * 0.15,
+    }}>Some Featured Work</motion.h1>
+        <motion.p className='text2'initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: index * 0.15,
+    }}>Things <i>I've Built</i></motion.p>
+        <motion.p className='description2'initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: index * 0.15,
+    }}>A collection of project where I solve real problems <br /> with clean code and thoughtful design. </motion.p>
+        <motion.div className="projects-grid"
+        initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: index * 0.15,
+    }}>
           {projects.slice(0, 4).map((project) => (
             <ProjectCard
               key={project.id}
               project={project}
             />
           ))}
-        </div>
-        <div className='projects'>
+        </motion.div>
+        <motion.div className='projects' initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: index * 0.15,
+    }}>
           <Link to="/projects" className='button3'>View All Projects →</Link>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <Footer/>
     </div></>
     
