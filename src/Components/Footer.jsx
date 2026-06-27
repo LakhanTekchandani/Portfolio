@@ -1,11 +1,14 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
         
-        <div className='foot-main'>
+        
+        
+        <motion.div initial={{opactiy:0, y: 50 }} whileInView={{opactiy:1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='foot-main'>
            <div  className='foot-sec'>
              <div className='first-cont'>
                 <h1 className='foot-name'>Lakhan</h1>
@@ -37,7 +40,8 @@ const Footer = () => {
               <div><p className='copy-text'>@ 2026 Lakhan Tekchandani.</p></div>
               <div><p className='copy-text'>Crafted with React, Framer Motion & Modern Web Technologies. </p></div>
             </div>
-        </div>
+        </motion.div>
+
     )
 }
 

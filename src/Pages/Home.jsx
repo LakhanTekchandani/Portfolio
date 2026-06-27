@@ -7,6 +7,9 @@ import { useState, useEffect } from "react";
 import projects from "../Data/projectsData";
 import ProjectCard from "../Components/ProjectCard";
 import Footer from '../Components/Footer';
+import { FaHtml5,FaCss3Alt,FaJs,FaReact,FaNodeJs,FaGitAlt,FaGithub, FaBootstrap,} from "react-icons/fa";
+import {SiExpress,SiMongodb,SiTailwindcss,SiFramer, SiPostman,} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const Home = () => {
   const roles = [
@@ -160,6 +163,75 @@ const Home = () => {
           <Link to="/projects" className='button3'>View All Projects →</Link>
         </motion.div>
       </div>
+      <div className='section3'>
+        <motion.h1 initial={{opactiy:0, y: 50 }} whileInView={{opactiy:1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='tech'>Tech Stack</motion.h1>
+        <motion.p className='des-3'initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{
+      duration: 0.5,
+      delay: 0.15,
+    }}>The tools and technologies I use to <br /> build amazing applications</motion.p>
+        <div className='marquee-wrapper'>
+          <motion.div className='marquee1' initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: 0.15 }}>
+            <div className='marquee-inner'>
+              <div className='marquee-track'>
+                <FaHtml5 style={{ color: "#E34F26" }} />
+                <FaCss3Alt style={{ color: "#1572B6" }} />
+                <FaJs style={{ color: "#F7DF1E" }} />
+                <FaReact style={{ color: "#61DAFB" }} />
+                <FaNodeJs style={{ color: "#339933" }} />
+                <FaGitAlt style={{ color: "#F05032" }} />
+                <FaGithub style={{ color: "white" }}/>
+              </div>
+              <div className='marquee-track'>
+                <FaHtml5 style={{ color: "#E34F26" }} />
+                <FaCss3Alt style={{ color: "#1572B6" }} />
+                <FaJs style={{ color: "#F7DF1E" }} />
+                <FaReact style={{ color: "#61DAFB" }} />
+                <FaNodeJs style={{ color: "#339933" }} />
+                <FaGitAlt style={{ color: "#F05032" }} />
+                <FaGithub style={{ color: "white" }}/>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div className='marquee2' initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: 0.15 }}>
+            <div className='marquee-inner2'>
+              <div className='marquee-track2'>
+                <SiExpress  style={{ color: "#61DAFB" }}/>
+                <SiMongodb style={{ color: "#4DB33D" }}/>
+                <SiTailwindcss style={{ color: "#38B2AC" }}/>
+                <SiFramer style={{ color: "#00C49A" }}/>
+                <SiPostman style={{ color: "#FF6B35" }}/>
+                <FaBootstrap style={{ color: "#7952B3" }}/>
+                <VscVscode style={{ color: "rgb(3, 187, 248)" }}/>
+              </div>
+              <div className='marquee-track2'>
+                <SiExpress style={{ color: "#61DAFB" }}/>
+                <SiMongodb style={{ color: "#4DB33D" }}/>
+                <SiTailwindcss style={{ color: "#38B2AC" }}/>
+                <SiFramer style={{ color: "#00C49A" }}/>
+                <SiPostman style={{ color: "#FF6B35" }}/>
+                <FaBootstrap style={{ color: "#7952B3" }}/>
+                <VscVscode style={{ color: "rgb(3, 187, 248)" }}/>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+      <motion.div initial={{opactiy:0, y: 50 }} whileInView={{opactiy:1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='section4'>
+                        <div className='inner-box'>
+                          <h1 className='tagline'>Let's Turn Your Ideas Into Reality.</h1>
+                        <p className='des-2'>Have an idea, a project or an opportunity? <br /> I'm always open to building meaningful digital experiences.</p>
+                        <div className='button4'><Link className='inner-but' to="/contact" >Let's Talk →</Link></div>
+                        </div>
+      </motion.div>
       <Footer/>
     </div></>
     
