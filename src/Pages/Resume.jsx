@@ -2,17 +2,8 @@ import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { motion } from 'framer-motion'
-import {
-  FaDownload,
-  FaShieldAlt,
-  FaFilePdf,
-  FaCheckCircle,
-  FaSearch,
-} from 'react-icons/fa'
-import {
-  MdOutlineSchool,
-  MdWork,
-} from 'react-icons/md'
+import { FaDownload, FaShieldAlt, FaFilePdf, FaSearch } from 'react-icons/fa'
+import { MdWork } from 'react-icons/md'
 import { BsFileEarmarkPerson } from 'react-icons/bs'
 import ResumeFile from '../Resume/Lakhan_Tekchandani_Resume.pdf'
 import ResumePreview from '../Images/ResumePreview.png'
