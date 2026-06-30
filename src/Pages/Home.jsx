@@ -26,7 +26,7 @@ const Home = () => {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [roles.length]);
   const [position, setPosition] = useState({
     rotateX: 0,
     rotateY: 0,
@@ -164,7 +164,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div className='section3'>
-        <motion.h1 initial={{opactiy:0, y: 50 }} whileInView={{opactiy:1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='tech'>Tech Stack</motion.h1>
+        <motion.h1 initial={{opactiy: 0, y: 50 }} whileInView={{opactiy: 1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='tech'>Tech Stack</motion.h1>
         <motion.p className='des-3'initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
@@ -225,7 +225,7 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-      <motion.div initial={{opactiy:0, y: 50 }} whileInView={{opactiy:1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='section4'>
+      <motion.div initial={{opactiy: 0, y: 50 }} whileInView={{opactiy: 1, y: 0 }} viewport={{once: true, amount: 0.2 }} transition={{duration: 0.5, delay: 0.15 }} className='section4'>
                         <div className='inner-box'>
                           <h1 className='tagline'>Let's Turn Your Ideas Into Reality.</h1>
                         <p className='des-2'>Have an idea, a project or an opportunity? <br /> I'm always open to building meaningful digital experiences.</p>
