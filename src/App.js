@@ -8,6 +8,7 @@ import Projects from './Pages/Projects';
 import Resume from './Pages/Resume';
 import Footer from './Components/Footer';
 import Lightfall from "./Components/Lightfall";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     />
   </div>
    <BrowserRouter>
+   <ScrollToTop />
    <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
