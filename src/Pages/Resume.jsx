@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { FaDownload, FaShieldAlt, FaFilePdf, FaSearch } from 'react-icons/fa'
 import { MdWork } from 'react-icons/md'
 import { BsFileEarmarkPerson } from 'react-icons/bs'
-import ResumeFile from '../Resume/Lakhan_Tekchandani_Resume.pdf'
+import ResumeFile from '../Resume/Lakhan_Tekchandani_Resume_Updated.pdf'
 import ResumePreview from '../Images/ResumePreview.png'
 
 const fadeUp = {
@@ -172,7 +172,7 @@ const Resume = () => {
             {/* Download Button */}
             <motion.a
               href={ResumeFile}
-              download="Lakhan_Tekchandani_Resume.pdf"
+              download="Lakhan_Tekchandani_Resume_Updated.pdf"
               className={`resume-download-btn ${hovered ? 'hovered' : ''}`}
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}

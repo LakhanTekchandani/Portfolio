@@ -8,6 +8,7 @@ import projects from "../Data/projectsData";
 import ProjectCard from "../Components/ProjectCard";
 import Footer from '../Components/Footer';
 import { FaHtml5,FaCss3Alt,FaJs,FaReact,FaNodeJs,FaGitAlt,FaGithub, FaBootstrap,} from "react-icons/fa";
+import { GLSLHills } from '../Components/GLSLHills';
 import {SiExpress,SiMongodb,SiTailwindcss,SiFramer, SiPostman,} from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -52,6 +53,9 @@ const Home = () => {
     <>
     <div>
       <motion.div initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeInOut" }} className='section1'>
+        <div className="glsl-hills-wrapper">
+          <GLSLHills />
+        </div>
         <Navbar />
         <motion.div className='inner-content'>
           <div className='text'>
