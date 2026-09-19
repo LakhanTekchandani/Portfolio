@@ -6,12 +6,21 @@ import CrowdFundImage from "../Images/CrowdFund.png";
 import FitvoraImage from "../Images/Fitvora.png";
 import KairaImage from "../Images/Kaira.png";
 import ErikkImage from "../Images/Erikk.png";
+import EWS from "../Images/EWS.png"
 
 
 
 const projects = [
     {
         id: 1,
+        title: "EWS",
+        image: EWS,
+        description: "A modern employee management system focused on clean layouts, product presentation and responsive user experience.",
+        liveLink: "https://empyl-management-system.netlify.app/",
+        githubLink: "https://github.com/LakhanTekchandani/Employee-Management-System"
+    },
+    {
+        id: 2,
         title: "Fitvora",
         image: FitvoraImage,
         description: "A cricket performance platform focused on fitness, nutrition, recovery and athlete development.",
@@ -19,7 +28,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/fitvora-elevate-play"
     },
     {
-        id: 2,
+        id: 3,
         title: "CrowdFund",
         image: CrowdFundImage,
         description: "A decentralized crowdfunding platform enabling transparent fundraising through blockchain technology.",
@@ -27,7 +36,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/crowdfunds"
     },
     {
-        id: 3,
+        id: 4,
         title: "Sahaayak",
         image: SahaayakImage,
         description: "A social impact platform empowering rural women through mentorship, learning and entrepreneurship opportunities.",
@@ -35,7 +44,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/sahaayak-project"
     },
     {
-        id: 4,
+        id: 5,
         title: "ProjectK72",
         image: ProjectK72Image,
         description: "A modern creative agency landing page focused on immersive visuals, smooth interactions and premium user experience.",
@@ -43,7 +52,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/k72"
     },
     {
-        id: 5,
+        id: 6,
         title: "Lamborghini Website",
         image: LamborghiniImage,
         description: "A premium automotive landing page showcasing luxury design, performance and immersive user experience.",
@@ -52,7 +61,7 @@ const projects = [
     },
 
     {
-        id: 6,
+        id: 7,
         title: "Coffee Website",
         image: CoffeeImage,
         description: "A modern coffee brand website featuring responsive design, engaging visuals and seamless user experience.",
@@ -60,7 +69,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/CoffeeStore-Web"
     },
     {
-        id: 7,
+        id: 8,
         title: "Kaira",
         image: KairaImage,
         description:
@@ -69,7 +78,7 @@ const projects = [
         githubLink: "https://github.com/LakhanTekchandani/Kaira_website"
     },
     {
-        id: 8,
+        id: 9,
         title: "Erikk",
         image: ErikkImage,
         description:
