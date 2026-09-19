@@ -15,7 +15,7 @@ const projects = [
         id: 1,
         title: "EWS",
         image: EWS,
-        description: "A modern employee management system focused on clean layouts, product presentation and responsive user experience.",
+        description: "A full-stack Employee Management System built for secure and efficient employee record management, featuring JWT authentication, CRUD operations, protected routes, and a responsive admin dashboard.",
         liveLink: "https://empyl-management-system.netlify.app/",
         githubLink: "https://github.com/LakhanTekchandani/Employee-Management-System"
     },
